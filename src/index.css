@@ -1,13 +1,115 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+:root {
+  --red: #ef5350;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://i.imgur.com/zwp2EXP.png") center top;
+  background-color: #41740e;
+  background-size: cover;
+  font-size: 16px;
+  font-family: "Press Start 2P";
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--red);
+  color: white;
+  padding: 2em 0;
+  width: 100%;
+}
+
+nav {
+  font-size: 1.75rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.card {
+  display: flex;
+  min-width: 375px;
+  border-radius: 10px;
+  background-color: #f0f8ff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card__body {
+  display: flex;
+}
+
+.card__title {
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  margin-bottom: 0.5em;
+}
+
+.card__info {
+  margin-top: 1.25em;
+}
+
+.card__type {
+  text-transform: capitalize;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 12px 20px;
+  cursor: pointer;
+  background: #c62828;
+  color: white;
+  margin-top: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pokemon {
+  padding-top: 8em;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1em;
+  text-transform: capitalize;
+}
+
+.info img {
+  margin-bottom: 1em;
+}
+
+.stats {
+  font-size: 14px;
+}
+
+.stats p {
+  margin: 1em auto;
 }
